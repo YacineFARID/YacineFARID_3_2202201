@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+}
+header img {
+  padding: 30px 28% 12px;
+  width: 44%;
+  height: 28px;
+}
+.localisation {
+  display: flex;
+  justify-content: center;
+  font-size: 1em;
+  font-weight: bold;
+  background-color: #eaeaea;
+  border-top: 2px;
+}

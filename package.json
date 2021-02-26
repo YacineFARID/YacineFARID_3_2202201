@@ -1,0 +1,11 @@
+{
+  "name": "p3_farid_yacine",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./npmpublic/css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
