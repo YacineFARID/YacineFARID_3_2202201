@@ -216,3 +216,19 @@ footer p {
   margin: 0;
   padding-bottom: 9px;
 }
+
+/*Pages menu */
+.header-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header-menu a{
+  font-size: 1.5em;
+  padding: 30px 17% 12px 20px;
+  
+}
+.header-menu img{
+  justify-content: center;
+  padding:30px 28% 12px 0; 
+}
