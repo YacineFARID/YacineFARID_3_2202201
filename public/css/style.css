@@ -234,9 +234,12 @@ footer p {
 }
 .header-menu img{
   justify-content: center;
-  padding:30px 28% 12px 0; 
+  padding:30px 25% 12px 0; 
 }
-.menu {
+.menu--background {
+  position:relative;
+  margin-top:-47px;
+  border-radius: 50px 42px 0 0;
   background: #f6f6f6;
 }
 .menu img {
