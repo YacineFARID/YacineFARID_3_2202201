@@ -381,10 +381,19 @@ footer p {
     flex-wrap: wrap;
     border-radius: 25px;
     background: #f6f6f6;
+    padding-top:40px;
   }
-  .restaurant-prev {
-    width: 40%;
-    margin: 5%;
+  .flex-card-tablet-and-desktop {
+    display: flex;
+    flex-direction: row;
+    padding: 0 40px 40px;
+  }
+  .flex-card {
+    width: 100%;
+    padding-right: 40px;
+  }
+    .restaurant-prev {
+      margin:0;
   }
 
   footer {
