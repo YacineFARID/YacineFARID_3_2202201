@@ -139,7 +139,7 @@ ol li::before {
 }
 
 section {
-  padding: 0 20px;
+  padding: 0 20px 64px;
   background: #f6f6f6;
 }
 section h2 {
@@ -148,6 +148,7 @@ section h2 {
   padding: 59px 0 27px 0;
 }
 .restaurant-prev {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -155,6 +156,15 @@ section h2 {
   border-radius: 20px;
   margin-bottom: 13px;
   box-shadow: 1px 1px 8px rgb(209, 208, 208);
+}
+.restaurant-prev span{
+  position:absolute;
+  background: #99E2D0;
+  color:#008766;
+  padding: 5px 10px;
+  border-radius: 2.5px;
+  transform: translate(243px,13px);
+
 }
 .restaurant-prev img {
   width: 100%;
