@@ -71,6 +71,7 @@ header img {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 220px;
   width: 60%;
   height: 50px;
   border-radius: 50px;
@@ -115,6 +116,7 @@ ol li::before {
   flex-direction: row;
   align-items: center;
   background: #f6f6f6;
+  max-width: 334px;
   height: 75px;
   border-radius: 20px;
   margin-bottom: 25px;
