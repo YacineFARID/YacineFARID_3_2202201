@@ -158,13 +158,13 @@ section h2 {
   box-shadow: 1px 1px 8px rgb(209, 208, 208);
 }
 .restaurant-prev span{
-  position:absolute;
+  position: absolute;
+  top:13px;
+  right: 13px;
   background: #99E2D0;
   color:#008766;
   padding: 5px 10px;
   border-radius: 2.5px;
-  transform: translate(243px,13px);
-
 }
 .restaurant-prev img {
   width: 100%;
