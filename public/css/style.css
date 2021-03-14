@@ -140,7 +140,6 @@ ol li::before {
   font-size: 0.9rem;
   font-weight: bold;
 }
-
 section {
   padding: 0 20px 64px;
   background: #f6f6f6;
@@ -177,8 +176,7 @@ section h2 {
 }
 .restaurant-prev__description {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
 }
 .restaurant-prev__description h3 {
   font-family: roboto;
@@ -194,15 +192,18 @@ section h2 {
   margin: 0;
 }
 .heart-icon {
+  position:absolute;
+  right:0;
+  bottom: 20px;
   padding: 22px 24px 0 0;
   font-size: 1.7rem;
 }
-.restaurant i {
+.heart-icon i {
   display: flex;
   align-items: center;
 }
-.restaurant i:hover {
-  background: linear-gradient(#9356dc, #ff79da);
+.heart-icon i:hover {
+  color: linear-gradient(#9356dc, #ff79da);
 }
 footer {
   height: 197px;
@@ -306,6 +307,7 @@ footer p {
   background: white;
   margin-bottom: 15px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .menu-list__description {
@@ -347,15 +349,15 @@ footer p {
   border-radius: 0 15px 15px 0;
   right: 0;
   top: 0;
-  animation: slideleft 0.3s ease-in-out forwards;
+  animation: slideleft 0.8s ease-in-out forwards;
 }
-.menu-list__description + .check-box {
-}
+
 .parent:hover > .check-box {
   display: block;
   width: 20%;
   overflow: hidden;
   text-overflow: ellipsis;
+  
 }
 .parent:hover > .check-box i {
   font-size: 20px;
