@@ -350,10 +350,12 @@ footer p {
   top: 0;
   animation: slideleft 0.3s ease-in-out forwards;
 }
-
+.menu-list__description + .check-box {
+  
+}
 .parent:hover > .check-box {
   display: block;
-  width: 10%;
+  width: 20%;
 }
 .parent:hover > .check-box i {
   font-size: 20px;
