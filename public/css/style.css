@@ -126,14 +126,26 @@ ol li::before {
   background: #f5edff;
 }
 .functioning-filter i {
-  padding: 0 27px 0 20px;
   color: #7e7e7e;
 }
 .functioning-filter i:hover {
   color: #9356dc;
 }
-.functioning-filter--icon {
-  font-size: 1.1rem;
+.fa-mobile-alt {
+  font-size: 1.3rem;
+  padding-left: 20px;
+  padding-right:27px;
+}
+.fa-list-ul {
+  font-size: 1.2rem;
+  padding-left: 0;
+  padding-left: 20px;
+  padding-right: 21px;
+}
+.fa-store {
+  font-size: 0.8rem;
+  padding-left: 20px;
+  padding-right:23px;
 }
 .functioning-filter p {
   font-family: roboto;
@@ -197,33 +209,40 @@ section h2 {
   bottom: 20px;
   padding: 22px 24px 0 0;
   font-size: 1.7rem;
+  cursor: pointer;
 }
 .heart-icon i {
   display: flex;
   align-items: center;
 }
-.heart-icon .fas {
-  display: none;
-  transform-origin: 50% 100%;
-  transform:scaleY(0);
-  transition: transform 1000ms;
-  color: linear-gradient(#9356dc, #ff79da);
-}
-.heart-icon:hover > .fas {
+.heart-empty {
   display: block;
-  transform:scaleY(1);
-  color: linear-gradient(#9356dc, #ff79da);
+  position: relative;
+  z-index: 1;
+  top: 0;
+  left: 0;
 }
-.heart-icon:hover > .far {
+.heart-icon .heart-full {
+  display: none;
+  animation: increase 1500ms;
+}
+.heart-icon:hover > .heart-full {
+  display: block;
+  background: linear-gradient(45deg, #9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.heart-icon:hover > .heart-empty {
   display: none;
 }
 @keyframes increase {
-  from {
-    transform: translateY(0);
+  0% {
     opacity: 0;
   }
-  to {
-    transform: translateY(0);
+  50% {
+    opacity: 0.5;
+  }
+  100% {
     opacity: 1;
   }
 }
@@ -246,16 +265,19 @@ footer h2 {
   flex-direction: row;
 }
 footer i {
-  font-size: 1rem;
+  font-size: 1.25rem;
   color: white;
-  padding-right: 9px;
 }
+.fa-hands-helping {
+  font-size: 0.9rem;
+}
+
 footer p {
   font-family: roboto;
   font-size: 1rem;
   color: white;
   margin: 0;
-  padding-bottom: 9px;
+  padding:0 0 9px 9px;
 }
 
 /*Pages menu */
@@ -302,6 +324,19 @@ footer p {
 .menu i {
   width: 100%;
   height: 100%;
+}
+.menu-list {
+  animation: slidedown 1s ease-in-out forwards;
+}
+@keyframes slidedown {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 .menu-list h2 {
   width: 13%;
@@ -501,6 +536,7 @@ footer p {
     background: #353535;
     border-radius: 25px;
   }
+
   /*Page menu*/
 
   .header-menu {
