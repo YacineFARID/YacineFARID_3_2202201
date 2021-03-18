@@ -488,7 +488,7 @@ footer p a {
     display: flex;
     flex-direction: column;
     padding: 0 40px;
-    box-shadow: 1px 1px 8px (81.2, 81.2, 81.2);
+    box-shadow: 1px 1px 8px (81, 81, 81);
   }
   .localisation {
     border-radius: 25px 25px 0 0;
