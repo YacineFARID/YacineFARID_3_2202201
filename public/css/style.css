@@ -10,7 +10,7 @@ header img {
   padding: 30px 28% 12px;
   width: 44%;
   height: 30px;
-  box-shadow: 1px 1px 8px rgb(81.2, 81.2, 81.2);
+  
 }
 .localisation {
   width: 100%;
@@ -84,6 +84,7 @@ header img {
   height: 50px;
   border-radius: 50px;
   background: linear-gradient(#ff79da, #9356dc);
+  box-shadow: 1px 1px 8px rgb(209, 208, 208);
 }
 .btn p {
   font-size: 0.9rem;
@@ -130,6 +131,7 @@ ol li::before {
   height: 75px;
   border-radius: 20px;
   margin-bottom: 25px;
+  box-shadow: 1px 1px 8px rgb(209, 208, 208);
 }
 .functioning-filter li:hover {
   background: #f5edff;
@@ -374,6 +376,7 @@ footer p {
   margin-bottom: 15px;
   overflow: hidden;
   cursor: pointer;
+  box-shadow: 1px 1px 8px rgb(209, 208, 208);
 }
 
 .menu-list__description {
