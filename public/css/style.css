@@ -192,8 +192,8 @@ section h2 {
   margin: 0;
 }
 .heart-icon {
-  position:absolute;
-  right:0;
+  position: absolute;
+  right: 0;
   bottom: 20px;
   padding: 22px 24px 0 0;
   font-size: 1.7rem;
@@ -202,8 +202,30 @@ section h2 {
   display: flex;
   align-items: center;
 }
-.heart-icon i:hover {
+.heart-icon .fas {
+  display: none;
+  transform-origin: 50% 100%;
+  transform:scaleY(0);
+  transition: transform 1000ms;
   color: linear-gradient(#9356dc, #ff79da);
+}
+.heart-icon:hover > .fas {
+  display: block;
+  transform:scaleY(1);
+  color: linear-gradient(#9356dc, #ff79da);
+}
+.heart-icon:hover > .far {
+  display: none;
+}
+@keyframes increase {
+  from {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 footer {
   height: 197px;
@@ -357,7 +379,6 @@ footer p {
   width: 20%;
   overflow: hidden;
   text-overflow: ellipsis;
-  
 }
 .parent:hover > .check-box i {
   font-size: 20px;
@@ -384,16 +405,18 @@ footer p {
   justify-content: center;
   align-items: center;
   color: white;
+  font-size: 20px;
   right: 0;
   top: 0;
-  animation: rotate 1s ease-in-out;
+  opacity: 1;
+  animation: rotate 800ms ease-in;
 }
 
 @keyframes rotate {
-  from {
+  0% {
     transform: rotate(-270deg);
   }
-  to {
+  100% {
     transform: rotate(0deg);
   }
 }
@@ -495,7 +518,7 @@ footer p {
   .menu--background {
     border-radius: 0 0 25px 25px;
   }
-  .parent:hover >.check-box {
-    width: 10%;
+  .parent:hover > .check-box {
+    width: 7%;
   }
 }
