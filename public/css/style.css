@@ -236,7 +236,7 @@ section h2 {
 }
 .heart-icon .heart-full {
   display: none;
-  animation: increase 1500ms ease-in-out;
+  animation: increase 1500ms ease-in-out forwards;
 }
 .heart-icon:hover > .heart-full {
   display: block;
@@ -249,12 +249,14 @@ section h2 {
 }
 @keyframes increase {
   0% {
+    transform: translateY(0.01em);
     opacity: 0;
   }
   50% {
     opacity: 0.5;
   }
   100% {
+    transform: translateY(0);
     opacity: 1;
   }
 }
@@ -488,7 +490,6 @@ footer p a {
     display: flex;
     flex-direction: column;
     padding: 0 40px;
-    box-shadow: 1px 1px 8px rgb(81, 81, 81);
   }
   .localisation {
     border-radius: 25px 25px 0 0;
