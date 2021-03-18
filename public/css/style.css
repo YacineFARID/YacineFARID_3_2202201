@@ -139,9 +139,10 @@ ol li::before {
 .functioning-filter i {
   color: #7e7e7e;
 }
-.functioning-filter i:hover {
+.functioning-filter li:hover > i {
   color: #9356dc;
 }
+
 .fa-mobile-alt {
   font-size: 1.3rem;
   padding-left: 20px;
@@ -235,11 +236,11 @@ section h2 {
 }
 .heart-icon .heart-full {
   display: none;
-  animation: increase 1500ms;
+  animation: increase 1500ms ease-in-out;
 }
 .heart-icon:hover > .heart-full {
   display: block;
-  background: linear-gradient(45deg, #9356dc, #ff79da);
+  background: linear-gradient(0, #9356dc, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -289,6 +290,9 @@ footer p {
   color: white;
   margin: 0;
   padding: 0 0 9px 9px;
+}
+footer p a { 
+  color:white;
 }
 
 /*Pages menu */
@@ -341,7 +345,7 @@ footer p {
 }
 @keyframes slidedown {
   from {
-    transform: translateY(10px);
+    transform: translateY(30px);
     opacity: 0;
   }
   to {
