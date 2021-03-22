@@ -46,6 +46,32 @@
     opacity: 1;
   }
 }
+.btn {
+  max-width: 220px;
+  width: 60%;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 0.9rem;
+  font-family: roboto;
+  background: linear-gradient(#ff79da, #9356dc);
+  box-shadow: 1px 1px 8px #d1d0d0;
+}
+
+.home-btn {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  padding-bottom: 57px;
+}
+
+.page-btn {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 60px;
+}
+
 body {
   width: 100%;
   margin: 0;
@@ -119,13 +145,6 @@ form p {
   font-family: roboto;
   font-size: 1rem;
   margin: 0;
-}
-
-.home-btn {
-  display: flex;
-  justify-content: center;
-  width: 60%;
-  padding-bottom: 57px;
 }
 
 .btn {
@@ -657,25 +676,6 @@ footer p a {
     transform: rotate(0deg);
   }
 }
-.page-btn {
-  display: flex;
-  justify-content: center;
-  padding: 10px 0 60px;
-}
-
-.btn {
-  max-width: 220px;
-  width: 60%;
-  height: 50px;
-  border: none;
-  border-radius: 50px;
-  color: white;
-  font-size: 0.9rem;
-  font-family: roboto;
-  background: linear-gradient(#ff79da, #9356dc);
-  box-shadow: 1px 1px 8px #d1d0d0;
-}
-
 @media only screen and (min-width: 768px) {
   /*Page menu*/
   .header-menu {

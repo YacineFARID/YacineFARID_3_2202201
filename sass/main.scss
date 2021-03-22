@@ -1,9 +1,11 @@
 @import "./components/loader";
+@import "./components/button";
 
 body {
   width: 100%;
   margin: 0;
 }
+
 a {
   text-decoration: none;
   color: black;
@@ -67,12 +69,7 @@ form p {
   font-size: 1rem;
   margin: 0;
 }
-.home-btn {
-  display: flex;
-  justify-content: center;
-  width: 60%;
-  padding-bottom: 57px;
-}
+
 .btn {
   height: 50px;
   border:none;
