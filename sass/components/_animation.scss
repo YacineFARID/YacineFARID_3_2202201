@@ -1,47 +1,114 @@
 /* animation du coeur */
 @keyframes increase {
-    0% {
-      transform: translateY(0.01em);
-      opacity: 0;
-    }
-    50% {
-      opacity: 0.5;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
+  0% {
+    transform: translateY(0.01em);
+    opacity: 0;
   }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
-  /* animation apparition des menus */
-  @keyframes slidedown {
-    from {
-      transform: translateY(30px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
+/* animation apparition des menus */
+@keyframes slidedown {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
   }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
-  /* animation de la coche des plats */
-  @keyframes slideleft {
-    from {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    to {
-      transform: translateX(0);
-      opacity: 1;
-    }
+/* animation de la coche des plats */
+@keyframes slideleft {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
   }
-  
-  @keyframes rotate {
-    0% {
-      transform: rotate(-270deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(-270deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* animation loader */
+@keyframes spin {
+  0% {
+    border-top: 10px solid $color-primary;
+    border-right: 10px solid $color-tertiary;
+    border-bottom: 10px solid $color-secondary;
+    border-left: 10px solid $color-tertiary;
+  }
+  13% {
+    border-top: 10px solid $color-tertiary;
+    border-right: 10px solid $color-primary;
+    border-bottom: 10px solid $color-tertiary;
+    border-left: 10px solid $color-secondary;
+  }
+  25% {
+    border-top: 10px solid $color-secondary;
+    border-right: 10px solid $color-tertiary;
+    border-bottom: 10px solid $color-primary;
+    border-left: 10px solid $color-tertiary;
+  }
+  50% {
+    border-top: 10px solid $color-tertiary;
+    border-right: 10px solid $color-secondary;
+    border-bottom: 10px solid $color-tertiary;
+    border-left: 10px solid $color-primary;
+  }
+  62% {
+    border-top: 10px solid $color-primary;
+    border-right: 10px solid $color-tertiary;
+    border-bottom: 10px solid $color-secondary;
+    border-left: 10px solid $color-tertiary;
+  }
+  75% {
+    border-top: 10px solid $color-tertiary;
+    border-right: 10px solid $color-primary;
+    border-bottom: 10px solid $color-tertiary;
+    border-left: 10px solid $color-secondary;
+  }
+  88% {
+    border-top: 10px solid $color-secondary;
+    border-right: 10px solid $color-tertiary;
+    border-bottom: 10px solid $color-primary;
+    border-left: 10px solid $color-tertiary;
+  }
+  100% {
+    border-top: 10px solid $color-tertiary;
+    border-right: 10px solid $color-secondary;
+    border-bottom: 10px solid $color-tertiary;
+    border-left: 10px solid $color-primary;
+  }
+}
+
+/* animation background du loader opacité */
+@keyframes fixloader {
+  0% {
+    opacity: 1;
+  }
+  98% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
