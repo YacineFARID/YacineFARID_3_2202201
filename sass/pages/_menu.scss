@@ -130,6 +130,18 @@
   right: 0;
   top: 0;
   animation: slideleft 0.8s ease-in-out forwards;
+
+  & i {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    right: 0;
+    top: 0;
+    opacity: 1;
+    animation: rotate 800ms ease-in;
+  }
 }
 
 .parent:hover > .check-box {
@@ -156,18 +168,6 @@
     transform: translateX(0);
     opacity: 1;
   }
-}
-
-.check-box i {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  font-size: 20px;
-  right: 0;
-  top: 0;
-  opacity: 1;
-  animation: rotate 800ms ease-in;
 }
 
 @keyframes rotate {
