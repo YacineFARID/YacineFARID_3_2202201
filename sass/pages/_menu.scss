@@ -47,16 +47,7 @@
 .menu-list {
   animation: slidedown 1s ease-in-out forwards;
 }
-@keyframes slidedown {
-  from {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
+
 .menu-list h2 {
   width: 13%;
   font-family: roboto;
@@ -129,6 +120,8 @@
   border-radius: 0 15px 15px 0;
   right: 0;
   top: 0;
+  -webkit-animation: slideleft 0.8s ease-in-out forwards;
+  -o-animation: slideleft 0.8s ease-in-out forwards;
   animation: slideleft 0.8s ease-in-out forwards;
 
   & i {
@@ -140,6 +133,8 @@
     right: 0;
     top: 0;
     opacity: 1;
+    -webkit-animation:rotate 800ms ease-in ;
+    -o-animation: rotate 800ms ease-in;
     animation: rotate 800ms ease-in;
   }
 }
@@ -159,25 +154,7 @@
   text-overflow: ellipsis;
 }
 
-@keyframes slideleft {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 
-@keyframes rotate {
-  0% {
-    transform: rotate(-270deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
 
 @media only screen and (min-width: 768px) {
   /*Page menu*/

@@ -1,0 +1,47 @@
+/* animation du coeur */
+@keyframes increase {
+    0% {
+      transform: translateY(0.01em);
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* animation apparition des menus */
+  @keyframes slidedown {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  /* animation de la coche des plats */
+  @keyframes slideleft {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(-270deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }

@@ -224,6 +224,8 @@ section {
   }
   & .heart-full {
     display: none;
+    -webkit-animation: increase 1500ms ease-in-out forwards;
+    -o-animation: increase 1500ms ease-in-out forwards;
     animation: increase 1500ms ease-in-out forwards;
   }
 }
@@ -238,19 +240,7 @@ section {
 .heart-icon:hover > .heart-empty {
   display: none;
 }
-@keyframes increase {
-  0% {
-    transform: translateY(0.01em);
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
+
 footer {
   height: 197px;
   background: #353535;
