@@ -95,26 +95,29 @@
   padding: 8px 10px 13px 10px;
   white-space: nowrap;
   overflow: hidden;
+
+  & h3 {
+    width: 100%;
+    font-family: roboto;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 0;
+  }
+  & p {
+    width: 50%;
+    font-size: 0.9rem;
+    margin: 0;
+    border: none;
+  }
 }
-.menu-list__description h3 {
-  width: 100%;
-  font-family: roboto;
-  font-size: 1em;
-  font-weight: bold;
-  margin: 0;
-}
+
 .description {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.menu-list__description p {
-  width: 50%;
-  font-size: 0.9rem;
-  margin: 0;
-  border: none;
-}
+
 .price {
   display: flex;
   justify-content: flex-end;
@@ -181,15 +184,16 @@
 
   .header-menu {
     margin: 0 40px;
+    & a {
+      padding: 30px 40px 12px 20px;
+    }
   }
-  .header-menu a {
-    padding: 30px 40px 12px 20px;
-  }
+
   .menu {
     margin: 0 40px 20px;
-  }
-  .menu img {
-    border-radius: 25px 25px 0 0;
+    & img {
+      border-radius: 25px 25px 0 0;
+    }
   }
   .menu--background {
     border-radius: 0 0 25px 25px;
