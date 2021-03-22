@@ -69,9 +69,15 @@
   display: none;
 }
 
-
 .menu-list {
+  opacity: 0;
   animation: slidedown 1s ease-in-out forwards;
+  &.menu-plats {
+    animation-delay: 1s;
+  }
+  &.menu-desserts {
+    animation-delay: 2s;
+  }
 }
 
 .menu-list h2 {

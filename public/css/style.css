@@ -5,6 +5,7 @@ a {
 }
 
 .background-loader {
+  display: none;
   position: fixed;
   z-index: 13;
   width: 100%;
@@ -511,7 +512,14 @@ footer p a {
 }
 
 .menu-list {
+  opacity: 0;
   animation: slidedown 1s ease-in-out forwards;
+}
+.menu-list.menu-plats {
+  animation-delay: 1s;
+}
+.menu-list.menu-desserts {
+  animation-delay: 2s;
 }
 
 .menu-list h2 {
@@ -752,7 +760,6 @@ footer p a {
   }
   100% {
     opacity: 0;
-    display: none;
   }
 }
 
