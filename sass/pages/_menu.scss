@@ -158,8 +158,6 @@
 
   & i {
     display: none;
-    justify-content: center;
-    align-items: center;
     color: white;
     font-size: 20px;
     right: 0;
@@ -172,7 +170,9 @@
 }
 
 .parent:hover > .check-box {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 20%;
   overflow: hidden;
   text-overflow: ellipsis;

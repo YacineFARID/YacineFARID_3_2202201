@@ -7,11 +7,9 @@ a {
 .background-loader {
   position: fixed;
   z-index: 13;
-  width: 100%;
   height: 100%;
+  width: 100%;
   background-color: white;
-  -webkit-animation: fixloader 3s linear;
-  -o-animation: fixloader 3s linear;
   animation: fixloader 3s linear;
   animation-fill-mode: forwards;
 }
@@ -25,9 +23,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  -webkit-animation: spin 3s linear;
-  -o-animation: spin 3s linear;
-  animation: spin 3s linear;
+  animation: spin 1.5s linear;
   animation-fill-mode: both;
   /* positionnement loader */
   margin: auto;
@@ -601,8 +597,6 @@ footer p a {
 }
 .check-box i {
   display: none;
-  justify-content: center;
-  align-items: center;
   color: white;
   font-size: 20px;
   right: 0;
@@ -614,7 +608,9 @@ footer p a {
 }
 
 .parent:hover > .check-box {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 20%;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -759,6 +755,7 @@ footer p a {
   }
   100% {
     opacity: 0;
+    z-index: -10;
   }
 }
 
