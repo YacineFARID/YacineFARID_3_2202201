@@ -1,5 +1,4 @@
 @import "./components/loader";
-@import "./pages/menu";
 
 body {
   width: 100%;
@@ -29,7 +28,7 @@ header img {
   padding-right: 20px;
 }
 .search {
-  width: 40%;
+  width: 50%;
   height: 80%;
   font-size: 1.3rem;
   font-weight: bold;
@@ -41,32 +40,29 @@ header img {
 ::-webkit-input-placeholder {
   color: black;
 }
-.home {
+
+form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background: #f6f6f6;
 }
-.home .title-part-1 {
+form h1 {
   display: flex;
-  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
   font-size: 1.36rem;
   font-weight: bold;
   font-family: roboto;
   margin: 0;
-  padding-top: 43px;
+  padding: 43px 0 22px;
 }
-.home .title-part-2 {
+
+form p {
   display: flex;
   justify-content: center;
-  font-size: 1.36rem;
-  font-weight: bold;
-  font-family: roboto;
-  margin: 0;
-  padding-bottom: 22px;
-}
-.home p {
-  display: flex;
-  justify-content: center;
+  text-align:center;
+  padding: 0 0 34px 39px;
   font-family: roboto;
   font-size: 1rem;
   margin: 0;
@@ -74,25 +70,20 @@ header img {
 .home-btn {
   display: flex;
   justify-content: center;
-  padding-top: 34px;
+  width: 60%;
   padding-bottom: 57px;
 }
 .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 220px;
-  width: 60%;
   height: 50px;
+  border:none;
   border-radius: 50px;
-  background: linear-gradient(#ff79da, #9356dc);
+  color: white;
+  font-size: 0.9rem;
+  font-family:roboto;
+  background: linear-gradient( #ff79da, #9356dc);
   box-shadow: 1px 1px 8px rgb(209, 208, 208);
 }
-.btn p {
-  font-size: 0.9rem;
-  font-family: roboto;
-  color: white;
-}
+
 
 .functioning-filter {
   display: flex;
@@ -284,6 +275,7 @@ footer h2 {
 footer i {
   font-size: 1.25rem;
   color: white;
+  padding-right: 9px;
 }
 .fa-hands-helping {
   font-size: 0.9rem;
@@ -294,13 +286,11 @@ footer p {
   font-size: 1rem;
   color: white;
   margin: 0;
-  padding: 0 0 9px 9px;
+  padding: 0 0 9px 0;
 }
 footer p a {
   color: white;
 }
-
-
 
 @media only screen and (min-width: 768px) {
   header img {
@@ -308,20 +298,20 @@ footer p a {
     width: 300px;
     box-shadow: none;
   }
-  .flex-home-desktop-tablet {
+  form {
     display: flex;
     flex-direction: column;
-    padding: 0 40px;
+    margin: 0 40px;
   }
   .localisation {
     border-radius: 25px 25px 0 0;
     box-shadow: none;
   }
   .search {
-    width: 10%;
+    width: 20%;
   }
-  .home {
-    border-radius: 0 0 25px 25px;
+  form {
+    border-radius: 25px;
   }
 
   .functioning-filter {
@@ -379,3 +369,5 @@ footer p a {
     border-radius: 25px;
   }
 }
+
+@import "./pages/menu";
