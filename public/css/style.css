@@ -738,11 +738,15 @@ footer p a {
     border-bottom: 10px solid #9356dc;
     border-left: 10px solid #99e2d0;
   }
-  100% {
+  99% {
     border-top: 10px solid #99e2d0;
     border-right: 10px solid #ff79da;
     border-bottom: 10px solid #99e2d0;
     border-left: 10px solid #9356dc;
+  }
+  100% {
+    border: none;
+    z-index: -10;
   }
 }
 /* animation background du loader opacité */
@@ -750,11 +754,12 @@ footer p a {
   0% {
     opacity: 1;
   }
-  98% {
+  99% {
     opacity: 1;
   }
   100% {
     opacity: 0;
+    display: none;
     z-index: -10;
   }
 }

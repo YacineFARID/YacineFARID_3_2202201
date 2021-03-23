@@ -90,11 +90,16 @@
     border-bottom: 10px solid $color-primary;
     border-left: 10px solid $color-tertiary;
   }
-  100% {
+  99% {
     border-top: 10px solid $color-tertiary;
     border-right: 10px solid $color-secondary;
     border-bottom: 10px solid $color-tertiary;
     border-left: 10px solid $color-primary;
+  }
+  100% {
+    border: none;
+    z-index: -10;
+
   }
 }
 
@@ -103,11 +108,12 @@
   0% {
     opacity: 1;
   }
-  98% {
+  99% {
     opacity: 1;
   }
   100% {
     opacity: 0;
+    display: none;
     z-index: -10;
   }
 }
