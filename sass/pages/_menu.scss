@@ -31,7 +31,7 @@
 }
 .menu__description h1 {
   font-size: 1.5rem;
-  font-family: shrikhand;
+  @include font-title;
   padding: 0 0 35px 19px;
   margin: 0;
 }
@@ -82,7 +82,7 @@
 
 .menu-list h2 {
   width: 13%;
-  font-family: roboto;
+  @include font-text;
   font-size: 1rem;
   font-weight: normal;
   padding-bottom: 8px;
@@ -121,8 +121,8 @@
 
   & h3 {
     width: 100%;
-    font-family: roboto;
-    font-size: 1em;
+    @include font-text;
+    font-size: 1rem;
     font-weight: bold;
     margin: 0;
   }

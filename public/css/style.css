@@ -561,7 +561,7 @@ footer p a {
 .menu-list__description h3 {
   width: 100%;
   font-family: roboto;
-  font-size: 1em;
+  font-size: 1rem;
   font-weight: bold;
   margin: 0;
 }

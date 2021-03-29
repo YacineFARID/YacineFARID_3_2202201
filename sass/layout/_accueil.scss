@@ -48,7 +48,7 @@ form {
     flex-wrap: wrap;
     font-size: 1.36rem;
     font-weight: bold;
-    font-family: roboto;
+    @include font-text;
     margin: 0;
     padding: 43px 0 22px;
   }
@@ -57,7 +57,7 @@ form {
     justify-content: center;
     text-align: center;
     padding: 0 0 34px 39px;
-    font-family: roboto;
+    @include font-text;
     font-size: 1rem;
     margin: 0;
   }
@@ -67,7 +67,7 @@ form {
     border-radius: 50px;
     color: white;
     font-size: 0.9rem;
-    font-family: roboto;
+    @include font-text;
     background: linear-gradient(45deg, $color-secondary, $color-primary);
     @include box-shadow;
   }
@@ -79,7 +79,7 @@ form {
   padding: 0 20px;
 
   & h2 {
-    font-family: roboto;
+    @include font-text;
     padding: 52px 0 32px 0;
     margin: 0;
   }
@@ -124,7 +124,7 @@ form {
     color: $color-primary;
   }
   & p {
-    font-family: roboto;
+    @include font-text;
     font-size: 0.9rem;
     font-weight: bold;
   }
@@ -152,7 +152,7 @@ section {
   background: $color-background;
 
   & h2 {
-    font-family: roboto;
+    @include font-text;
     margin: 0;
     padding: 59px 0 27px 0;
   }
@@ -190,14 +190,14 @@ section {
   flex-direction: column;
 
   & h3 {
-    font-family: roboto;
+    @include font-text;
     font-size: 1rem;
     font-weight: bold;
     padding: 20px 0 6px 15px;
     margin: 0;
   }
   & p {
-    font-family: roboto;
+    @include font-text;
     font-size: 1rem;
     padding-left: 15px;
     margin: 0;
@@ -231,7 +231,7 @@ section {
 
 .heart-icon:hover > .heart-full {
   display: block;
-  background: linear-gradient(0, #9356dc, #ff79da);
+  background: linear-gradient(0, $color-primary, $color-secondary);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -249,7 +249,7 @@ footer {
 
   & h2 {
     font-size: 1rem;
-    font-family: shrikhand;
+    @include font-title;
     color: white;
     margin: 0;
     padding: 26px 0 22px 0;
@@ -260,7 +260,7 @@ footer {
     padding-right: 9px;
   }
   & p {
-    font-family: roboto;
+    @include font-text;
     font-size: 1rem;
     color: white;
     margin: 0;
