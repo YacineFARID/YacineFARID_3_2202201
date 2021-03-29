@@ -52,8 +52,6 @@
   }
   & .heart-full {
     display: none;
-    -webkit-animation: increase 1500ms ease-in-out forwards;
-    -o-animation: increase 1500ms ease-in-out forwards;
     animation: increase 1500ms ease-in-out forwards;
   }
 }
