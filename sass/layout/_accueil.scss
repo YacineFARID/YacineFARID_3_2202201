@@ -130,23 +130,6 @@ form {
   }
 }
 
-.fa-mobile-alt {
-  font-size: 1.3rem;
-  padding-left: 20px;
-  padding-right: 27px;
-}
-.fa-list-ul {
-  font-size: 1.2rem;
-  padding-left: 0;
-  padding-left: 20px;
-  padding-right: 21px;
-}
-.fa-store {
-  font-size: 0.8rem;
-  padding-left: 20px;
-  padding-right: 23px;
-}
-
 section {
   padding: 0 20px 64px;
   background: $color-background;
@@ -255,19 +238,18 @@ footer {
     padding: 26px 0 22px 0;
   }
   & i {
-    font-size: 1.25rem;
-    color: white;
+    color: $color-quaternary;
     padding-right: 9px;
   }
   & p {
     @include font-text;
     font-size: 1rem;
-    color: white;
+    color: $color-quaternary;
     margin: 0;
     padding: 0 0 9px 0;
   }
   & p a {
-    color: white;
+    color: $color-quaternary;
   }
 }
 
@@ -276,9 +258,7 @@ footer {
   flex-direction: row;
 }
 
-.fa-hands-helping {
-  font-size: 0.8rem;
-}
+
 
 @media only screen and (min-width: 768px) {
   header img {
