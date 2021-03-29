@@ -4,6 +4,35 @@ a {
   color: black;
 }
 
+/* icons functioning */
+.fa-mobile-alt {
+  font-size: 1.3rem;
+  padding-left: 20px;
+  padding-right: 27px;
+}
+
+.fa-list-ul {
+  font-size: 1.2rem;
+  padding-left: 0;
+  padding-left: 20px;
+  padding-right: 21px;
+}
+
+.fa-store {
+  font-size: 0.8rem;
+  padding-left: 20px;
+  padding-right: 23px;
+}
+
+/* icons footer */
+.fa-utensils {
+  font-size: 1.25rem;
+}
+
+.fa-hands-helping {
+  font-size: 0.8rem;
+}
+
 .background-loader {
   position: fixed;
   z-index: 13;
@@ -201,25 +230,6 @@ form.btn {
   font-weight: bold;
 }
 
-.fa-mobile-alt {
-  font-size: 1.3rem;
-  padding-left: 20px;
-  padding-right: 27px;
-}
-
-.fa-list-ul {
-  font-size: 1.2rem;
-  padding-left: 0;
-  padding-left: 20px;
-  padding-right: 21px;
-}
-
-.fa-store {
-  font-size: 0.8rem;
-  padding-left: 20px;
-  padding-right: 23px;
-}
-
 section {
   padding: 0 20px 64px;
   background: #f6f6f6;
@@ -326,28 +336,23 @@ footer h2 {
   padding: 26px 0 22px 0;
 }
 footer i {
-  font-size: 1.25rem;
-  color: white;
+  color: #fff;
   padding-right: 9px;
 }
 footer p {
   font-family: roboto;
   font-size: 1rem;
-  color: white;
+  color: #fff;
   margin: 0;
   padding: 0 0 9px 0;
 }
 footer p a {
-  color: white;
+  color: #fff;
 }
 
 .footer__flex {
   display: flex;
   flex-direction: row;
-}
-
-.fa-hands-helping {
-  font-size: 0.8rem;
 }
 
 @media only screen and (min-width: 768px) {
