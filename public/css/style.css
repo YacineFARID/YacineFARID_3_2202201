@@ -73,12 +73,19 @@ a {
   width: 220px;
   height: 50px;
   border: none;
+  outline: none;
   border-radius: 50px;
   color: white;
   font-size: 0.9rem;
   font-family: roboto;
   background: linear-gradient(#ff79da, #9356dc);
   box-shadow: 1px 1px 8px #d1d0d0;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.btn:active {
+  border: none;
 }
 
 /* boutton accueil */
@@ -304,8 +311,6 @@ section h2 {
 }
 .heart-icon .heart-full {
   display: none;
-  -webkit-animation: increase 1500ms ease-in-out forwards;
-  -o-animation: increase 1500ms ease-in-out forwards;
   animation: increase 1500ms ease-in-out forwards;
 }
 
@@ -494,8 +499,6 @@ footer p a {
 }
 .heart-menu .heart-full {
   display: none;
-  -webkit-animation: increase 1500ms ease-in-out forwards;
-  -o-animation: increase 1500ms ease-in-out forwards;
   animation: increase 1500ms ease-in-out forwards;
 }
 
