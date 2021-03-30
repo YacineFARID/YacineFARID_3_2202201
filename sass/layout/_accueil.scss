@@ -61,16 +61,6 @@ form {
     font-size: 1rem;
     margin: 0;
   }
-  &.btn {
-    height: 50px;
-    border: none;
-    border-radius: 50px;
-    color: white;
-    font-size: 0.9rem;
-    @include font-text;
-    background: linear-gradient(45deg, $color-secondary, $color-primary);
-    @include box-shadow;
-  }
 }
 
 .functioning-filter {
@@ -255,8 +245,6 @@ footer {
   display: flex;
   flex-direction: row;
 }
-
-
 
 @media only screen and (min-width: 768px) {
   header img {

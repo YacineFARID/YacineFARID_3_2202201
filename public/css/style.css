@@ -83,9 +83,8 @@ a {
 }
 .btn:hover {
   cursor: pointer;
-}
-.btn:active {
-  border: none;
+  background: linear-gradient(#ff93e1, #a16be0);
+  box-shadow: 10px 10px 5px #d1d0d0;
 }
 
 /* boutton accueil */
@@ -169,16 +168,6 @@ form p {
   font-family: roboto;
   font-size: 1rem;
   margin: 0;
-}
-form.btn {
-  height: 50px;
-  border: none;
-  border-radius: 50px;
-  color: white;
-  font-size: 0.9rem;
-  font-family: roboto;
-  background: linear-gradient(45deg, #ff79da, #9356dc);
-  box-shadow: 1px 1px 8px #d1d0d0;
 }
 
 .functioning-filter {
