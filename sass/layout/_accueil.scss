@@ -203,7 +203,6 @@ section {
 .heart-icon:hover > .heart-full {
   display: block;
   background: linear-gradient(0, $color-primary, $color-secondary);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

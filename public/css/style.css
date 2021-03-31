@@ -306,7 +306,6 @@ section h2 {
 .heart-icon:hover > .heart-full {
   display: block;
   background: linear-gradient(0, #9356dc, #ff79da);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -494,7 +493,6 @@ footer p a {
 .heart-menu:hover > .heart-full {
   display: block;
   background: linear-gradient(0, #9356dc, #ff79da);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
