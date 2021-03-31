@@ -181,6 +181,7 @@ form p {
   margin: 0;
 }
 .functioning-filter ol {
+  counter-reset: section;
   list-style-type: none;
   padding: 13px;
   margin: 0;
@@ -191,7 +192,8 @@ form p {
   width: 25px;
   height: 25px;
   border-radius: 25px;
-  content: "1";
+  counter-increment: section;
+  content: counters(section, ".");
   color: white;
   background: #9356dc;
   display: inline-block;
@@ -348,7 +350,7 @@ footer p a {
   flex-direction: row;
 }
 
-@media only screen and (min-width: 768px) and (min-width: 1224px) {
+@media only screen and (min-width: 768px) {
   header img {
     padding: 30px 0 12px 50px;
     width: 300px;
